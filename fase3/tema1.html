@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Grid Layout</title>
+  <link rel="stylesheet" href="CSS/Style.css" />
+</head>
+
+<body>
+  <!-- Contenedor de la página -->
+  <div class="container">
+    <!-- Inicio de la etiqueta Header -->
+    <header>
+      <h1>Sitio web como herramienta de aprendizaje del tema <br> Flex Box y CSS Grid</h1>
+    </header>
+    <!-- Inicio de la etiqueta NAV para el menu -->
+    <nav class="menu-area">
+      <ul>
+        <li><a href="index.html"> Inicio</a></li>
+        <li><a href="#"> Temas</a>
+          <ul class="dropdown-1">
+            <li><a href="tema1.html"> Tema 1 - Css Grid Layout</a></li>
+            <li><a href="tema2.html"> Tema 2 - Flexbox</a></li>
+          </ul>
+        </li>
+        <li><a href="#"> Recursos Digitales</a>
+          <ul class="dropdown-1">
+            <li><a href="recurso1.html"> Explicación de CSS Grid</a></li>
+            <li><a href="recurso2.html"> Explicación de FlexBox</a></li>
+          </ul>
+        </li>
+        <li><a href="#"> Aprendizaje</a>
+          <ul class="dropdown-1">
+            <li><a href="#"> Actividad 1</a></li>
+            <li><a href="#"> Actividad 2</a></li>
+          </ul>
+        </li>
+        <li><a href="autor.html"> Acerca del Autor</a></li>
+      </ul>
+    </nav>
+    <div class="conten">
+
+      <aside>
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340px&height=1230px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="340px" height="1230px" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </aside>
+
+      <!-- Inicio de la etiqueta Sectión -->
+      <section>
+        <article>
+          <h2>
+            CSS Grid Layout
+          </h2>
+
+          <p><b>CSS Grid layout </b> contiene funciones de diseño dirigidas a los desarrolladores de aplicaciones web.
+            El CSS
+            grid se puede utilizar para lograr muchos diseños diferentes. También se destaca por permitir dividir una
+            página en áreas o regiones principales, por definir la relación en términos de tamaño, posición y capas
+            entre partes de un control construido a partir de primitivas HTML.</p>
+          <p>Al igual que las tablas, el grid layout permite a un autor alinear elementos en columnas y filas. Sin
+            embargo, con CSS grid son posibles muchos más diseños y de forma más sencilla que con las tablas. Por
+            ejemplo, los elementos secundarios de un contenedor de cuadrícula podrían posicionarse para que se solapen y
+            se superpongan, de forma similar a los elementos posicionados en CSS.</p>
+
+          <h4>Ejemplo Sencillo</h4>
+
+          <p>El siguiente ejemplo muestra un grid de tres columnas con filas nuevas creadas con un mínimo de 100 píxeles
+            y un máximo automático. Los elementos se han colocado en el grid utilizando posicionamiento en línea.</p>
+
+          <p class="title_1">Codigo: HTML</p>
+
+          <pre><code>&lt;div class="wrapper"&gt; <br>    &lt;div class="one"&gt;One&lt;/div&gt; <br>    &lt;div class="two"&gt;Two&lt;/div&gt; <br>    &lt;div class="three"&gt;Three&lt;/div&gt; <br>    &lt;div class="four"&gt;Four&lt;/div&gt; <br>    &lt;div class="five"&gt;Five&lt;/div&gt; <br>    &lt;div class="six"&gt;Six&lt;/div&gt; <br>&lt;/div&gt;
+            </code>
+          </pre>
+
+          <p class="title_1">Codigo: CSS</p>
+
+          <pre><code>.wrapper { <br>   display: grid; <br>   grid-template-columns: repeat(3, 1fr); <br>   grid-gap: 10px; <br>   grid-auto-rows: minmax(100px, auto);<br>}
+
+.one { <br>   grid-column: 1 / 3; <br>   grid-row: 1;<br>}
+
+.two { <br>   grid-column: 2 / 4; <br>   grid-row: 1 / 3;<br>}
+
+.three { <br>   grid-column: 1; <br>   grid-row: 2 / 5;<br>}
+
+.four { <br>   grid-column: 3; <br>   grid-row: 3;<br>}
+
+.five { <br>   grid-column: 2; <br>   grid-row: 4;<br>}
+
+.six { <br>   grid-column: 3; <br>   grid-row: 4;<br>}
+          </code></pre>
+          <img src="MULTIMEDIA/CSS_Grid_resultado.png" alt="Resultado del código empleado" style="width: 600px;">
+        </article>
+        <span class="referencias">
+          <h3>Referencias:</h3>
+          MDN Web Docs. (s.f.). CSS Grid Layout. Obtenido de MDN Web Docs:
+          <span class="url"> <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout">
+              https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout</a></span>
+        </span>
+      </section>
+    </div>
+    <hr />
+    <footer>
+      <p>Universidad Nacional abierta y a distancia - UNAD</p>
+      <p>Correo:<a href="mailto:jhonbarrios5@gmail.com">jhonbarrios5@gmail.com</a></p>
+      <p>Whatsapp: <a href="https://wa.me/573017494323?text=Envio%20mensaje%20desde%20la%20página%20web">3017494323</a>
+      </p>
+      <P>Skype: jhonbarrios5</P>
+    </footer>
+  </div>
+</body>
+
+</html>

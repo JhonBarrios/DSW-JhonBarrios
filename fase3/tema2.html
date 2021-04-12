@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conceptos Básicos de flexbox</title>
+  <link rel="stylesheet" href="CSS/Style.css" />
+</head>
+
+<body>
+  <!-- Contenedor de la página -->
+  <div class="container">
+    <!-- Inicio de la etiqueta Header -->
+    <header>
+      <h1>Sitio web como herramienta de aprendizaje del tema <br> Flex Box y CSS Grid</h1>
+    </header>
+    <!-- Inicio de la etiqueta NAV para el menu -->
+    <nav class="menu-area">
+      <ul>
+        <li><a href="index.html"> Inicio</a></li>
+        <li><a href="#"> Temas</a>
+          <ul class="dropdown-1">
+            <li><a href="tema1.html"> Tema 1 - Css Grid Layout</a></li>
+            <li><a href="tema2.html"> Tema 2 - Flexbox</a></li>
+          </ul>
+        </li>
+        <li><a href="#"> Recursos Digitales</a>
+          <ul class="dropdown-1">
+            <li><a href="recurso1.html"> Explicación de CSS Grid</a></li>
+            <li><a href="recurso2.html"> Explicación de FlexBox</a></li>
+          </ul>
+        </li>
+        <li><a href="#"> Aprendizaje</a>
+          <ul class="dropdown-1">
+            <li><a href="#"> Actividad 1</a></li>
+            <li><a href="#"> Actividad 2</a></li>
+          </ul>
+        </li>
+        <li><a href="autor.html"> Acerca del Autor</a></li>
+      </ul>
+    </nav>
+    <div class="conten">
+
+      <aside>
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340px&height=1230px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="340px" height="1230px" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </aside>
+
+      <!-- Inicio de la etiqueta Sectión -->
+      <section>
+        <h2>
+          Conceptos Básicos de flexbox
+        </h2>
+
+        <p>El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout,
+          y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las
+          capacidades de alineación. Este artículo hace un repaso de las principales características de flexbox, las que
+          exploraremos con mayor detalle en el resto de estas guías.</p>
+        <br>
+        <p>Cuando describimos a flexbox como unidimensional destacamos el hecho que flexbox maneja el layout en una sola
+          dimensión a la vez — ya sea como fila o como columna. Esto contrasta con el modelo bidimensional del Grid
+          Layout de CSS, el cual controla columnas y filas a la vez.</p>
+
+        <p class="title_1">Los dos ejes de flexbox</p>
+
+        <p>Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes — el eje principal y el eje cruzado.
+          El eje principal está definido por la propiedad flex-direction, y el eje cruzado es perpendicular a este. Todo
+          lo que hacemos con flexbox está referido a estos dos ejes, por lo que vale la pena entender cómo trabajan
+          desde el principio.</p>
+
+        <p class="title_1">El eje principal</p>
+
+        <p>El eje principal está definido por flex-direction, que posee cuatro posibles valores:</p>
+
+        <ul class="list">
+          <li>row</li>
+          <li>row-reverse</li>
+          <li>column</li>
+          <li>column-reverse</li>
+        </ul>
+
+        <p>Si elegimos row o row-reverse, el eje principal correrá a lo largo de la fila según la <b> dirección de la
+            línea.</b></p>
+
+        <img src="MULTIMEDIA/Basics1.png" alt="Imagen de Main Axis - flex-direction: row">
+
+        <p>Al elegir column o column-reverse el eje principal correrá desde el borde superior de la página hasta el
+          final — según la <b>dirección del bloque.</b></p>
+
+        <img src="MULTIMEDIA/Basics2.png" alt="Imagen de Main Axis - flex-direction: column">
+
+        <p class="title_1">El eje cruzado</p>
+
+        <p>El eje cruzado va perpendicular al eje principal, y por lo tanto si flex-direction (del eje principal) es row
+          o row-reverse el eje cruzado irá por las columnas.</p>
+
+        <img src="MULTIMEDIA/Basics3.png" alt="Imagen de Cross Axis - flex-direction: row">
+
+        <p>Si el eje principal es column o column-reverse entonces el eje cruzado corre a lo largo de las filas.</p>
+
+        <img src="MULTIMEDIA/Basics4.png" alt="Imagen de Axis - flex-direction: column">
+
+        <p>Entender cuál eje es cuál es importante cuando empezamos a mirar la alineación y justificación flexible de
+          los ítems; flexbox posee propiedades que permiten alinear y justificar el contenido sobre un eje o el otro.
+        </p>
+
+        <span class="referencias">
+          <h3>Referencias:</h3>
+          MDN Web Docs. (n.d.). Conceptos Básicos de flexbox. Retrieved from MDN Web Docs:
+          <span class="url"> <a
+              href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">
+              https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox</a></span>
+        </span>
+      </section>
+    </div>
+    <hr />
+    <footer>
+      <p>Universidad Nacional abierta y a distancia - UNAD</p>
+      <p>Correo:<a href="mailto:jhonbarrios5@gmail.com">jhonbarrios5@gmail.com</a></p>
+      <p>Whatsapp: <a href="https://wa.me/573017494323?text=Envio%20mensaje%20desde%20la%20página%20web">3017494323</a>
+      </p>
+      <P>Skype: jhonbarrios5</P>
+    </footer>
+  </div>
+</body>
+
+</html>

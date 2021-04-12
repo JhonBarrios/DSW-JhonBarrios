@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+/* Resetear los estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d6d6d65f;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.list {
+  padding: 30px 60px;
+}
+
+img {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor general */
+.container {
+  width: 1200px;
+  margin: auto;
+  background-color: #d6d6d6;
+  padding: 20px;
+}
+
+/* Estilos que corresponden al menu y su funcionalidad */
+.menu-area {
+  margin: 20px 0px;
+}
+
+.menu-area a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: cadetblue;
+  height: 50px;
+  text-decoration: none;
+}
+
+.menu-area a:hover {
+  background: grey;
+  color: #fff;
+}
+
+.menu-area ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-area li {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dropdown-1 li {
+  display: none;
+  position: relative;
+}
+
+.dropdown-1 li:hover {
+  display: block;
+}
+
+.menu-area li:hover .dropdown-1>li {
+  top: 0;
+  display: block;
+}
+
+/* Estilos para el H1 que se encuentra dentro contenedor y dentro de Header */
+.container header h1 {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+}
+
+/* contenedor de columnas o principal para aplicar CSS GRID */
+.conten {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  
+}
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  text-align: center;
+}
+
+section h2, h4 {
+  padding: 20px;
+}
+
+/* Estilos para el Pie de Página o Footer */
+footer {
+  padding: 15px;
+  background-color: cadetblue;
+  text-align: center;
+  color: white;
+  border-end-start-radius: 20px;
+  border-end-end-radius: 20px;
+}
+
+.referencias {
+  display: block;
+  margin: 30px 0;
+}
+
+.referencias h3 {
+  padding: 20px 0;
+}
+
+.referencias .url {
+  padding-left: 30px;
+}
+
+/* Estilos para la página Autor */
+.img_perfil {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border-style: groove;
+  background-image: url("../MULTIMEDIA/IMG_20210321_095403.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+h3 {
+  padding: 8px;
+}
+
+h3 span {
+  font-weight: 100;
+}
+
+/* Estilos para el Tema 1 */
+.title_1 {
+  background-color: #212121;
+  color: #fff;
+  font-weight: 400;
+  max-width: max-content;
+  padding: 0 6px;
+  margin: 24px 0;
+}
+
+/* Estilos para el video de Youtube ubicado en los recursos de la web */
+.cont_video {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.video_youtube {
+  margin: 0 auto;
+}
